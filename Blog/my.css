@@ -1,0 +1,82 @@
+ .destination{
+	align:middle;
+	}
+#heading{
+		font-size:60px;
+		font-family:Showcard Gothic;
+		font-weight:20px;
+		color:silver;
+		}
+.destination table{
+
+		background-color:black;
+		width:97%;
+		
+		 
+	}
+.destination td{
+	 padding-top: 40px;
+    padding-bottom: 40px;
+	}
+.destination img{
+	height:200px;
+	width:400px;
+	display: block;
+    margin-left: -50px;
+    margin-right: auto;
+	border-radius:40px;
+	border-color:white;
+	}
+.destination button{
+	 margin-left: -50px;
+    margin-right: auto;
+	display: block;
+	font-family:arial black;
+	color:white;
+	}
+	.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  
+   
+}
+#heading1{
+	font-family:Showcard Gothic;
+	font-size:30px;
+	color:blue;
+	}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color:grey;
+}

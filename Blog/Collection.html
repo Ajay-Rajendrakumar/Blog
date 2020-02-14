@@ -1,0 +1,292 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Collections</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width:800px;
+	max-height:400px;
+}
+.hvrbox #hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+body{
+	background-color:black;
+	}
+.hvrbox button{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	}
+.mod button{
+	position:absolute;
+	bottom:5px;
+	right:10px;
+	}
+h2{
+	font-size:50px;
+	font-family:elephant;
+	color:silver;
+	}
+</style>
+<script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
+<script>
+var myObj, i, j,user;
+
+myObj = {
+  "photographer": [
+    {"name":"Nish","Website":"Travellerfreak", "photos":["three"]},
+    {"name":"Ram","Website":"Off the path","photos":["two"]},
+    {"name":"Robb","Website":"ToEdge", "photos":["nine"] },
+	    {"name":"Catelyn","Website":"ToEdge", "photos":["three"] },
+		 {"name":"Arya","Website":"ToEdge", "photos":[ "four"] },
+		  {"name":"Turner","Website":"ToEdge", "photos":["five"] },
+		   {"name":"Emilia","Website":"ToEdge", "photos":["six"] },
+		    {"name":"Jon","Website":"ToEdge", "photos":["seven"] },
+			 {"name":"Stark","Website":"ToEdge", "photos":["eight"] },
+			  {"name":"Tony","Website":"ToEdge", "photos":["ten"] }
+  ]
+}
+user={};
+user.recom=[];
+
+ 
+							  
+	function my(id){
+	var k='#'+id;
+		 $(k).prop('disabled', true);
+		var i,j;
+		 
+		for(i in myObj.photographer){
+				for(j in myObj.photographer[i].photos){
+							if(myObj.photographer[i].photos[j]==id)	{
+									 
+									var ob={"name":myObj.photographer[i].name};
+									user.recom.push(ob);
+								 
+									}
+									}
+									
+									}
+									}
+	
+	function go(){
+			var i;
+			document.getElementById("rec").innerHTML = "";;
+			for(i in user.recom){
+				 
+				  
+				   $("p").append(" <b>"+user.recom[i].name+"</b><br>");
+				  }
+				  }
+			
+		
+							
+				
+</script>
+</head>
+<body>
+
+<h2 class="w3-center">COLLECTION</h2>
+<br>
+<br>
+<br>
+<div class="w3-content w3-display-container">
+<center>
+
+   <div class="hvrbox">
+	<img src="city.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">City Palace</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="one" onclick="my(this.id)">Like</button>
+	</div>
+</div>  
+
+ <div class="hvrbox">
+	<img src="elephant.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Elephanta Caves</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="two" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+
+ <div class="hvrbox">
+	<img src="hampi.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Ruins of Hampi</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="three" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+
+ <div class="hvrbox">
+	<img src="charminar.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Charminar</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="four" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+
+ <div class="hvrbox">
+	<img src="kerala.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Back Waters, Kerala</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="five" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+
+ <div class="hvrbox">
+	<img src="Mumbai.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Mumbai</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="six" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+
+ <div class="hvrbox">
+	<img src="jama.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Jama Mashid</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="seven" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+
+ <div class="hvrbox">
+	<img src="varanasi.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Varanasi</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="eight" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+
+ <div class="hvrbox">
+	<img src="goa.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Goa</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="nine" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+
+ <div class="hvrbox">
+	<img src="amber.jpg" alt="Mountains" id="hvrbox-layer_bottom"class="mySlides">
+	<div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Amber Fort</div>
+		 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden" id="ten" onclick="my(this.id)">Like</button>
+	</div>
+</div>
+</center>
+  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<div class="mod">
+ <button type="button"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="go()">Open Recommendation</button>
+</div>
+ 
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+ 
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Recommended:</h4>
+      </div>
+      <div class="modal-body">
+	  
+        <p id="rec"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+
+
+
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+									
+ 
+</script>
+
+</body>
+</html>

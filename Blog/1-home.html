@@ -1,0 +1,641 @@
+      <!Doctype html>
+<html>
+<head>
+ <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="icon" type="image/png" href="LOGO.png">
+ <title>Adventure-blog</title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="my.css">
+<style>
+
+   
+#home1
+{
+	
+	background-size: cover;
+    background-repeat: no-repeat;
+    height:600px;
+	background-position:center;
+
+}
+#logo{
+	font-family:Magneto;
+	color:orange;
+	font-size:60px;
+	 
+	
+	}
+#home2{
+	background-color:black;
+	opacity:0.5;
+	height:250px;
+	position:relative;
+	top:-180px;
+	 
+	}
+#myNavbar{
+		font-size:20px;
+		font-family:Elephant;
+		position:fixed;
+		top:55px;
+		right:30px;
+		 		
+	}
+#tex{
+	font-family:Showcard Gothic;
+	color:white;
+	font-size:50px;
+	opacity:1;
+	
+	}
+#tex2{
+	
+	color:silver;
+	font-size:30px;
+	text-align:center;
+}
+body{
+		background-color:white;
+		}
+.navbar{
+	min-height:110px;
+	text-center:10px;
+	}
+#logo1{
+		align:center;
+		position:fixed;
+		left:130px;
+		top:60px;
+	}
+#img1{
+	position:fixed;
+	top:5px;
+	border-radius:40%;
+	}
+
+.desti{
+		background-color:#aaaa55;
+	 
+		}
+		
+#heading{
+		font-size:60px;
+		font-family:Showcard Gothic;
+		font-weight:20px;
+		color:silver;
+		}
+.destination table{
+
+		background-color:black;
+		width:100%;
+	 
+		
+		 
+	}
+.destination td{
+	 
+	}
+.destination img{
+	  max-width: 100%;
+  height: auto;
+	display: block;
+	border-radius:auto;
+	}
+.destination button{
+	 margin-left: -100px;
+    margin-right: auto;
+	display: block;
+	font-family:Arial black;
+	color:blue;
+	}
+	.container {
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.sign {
+		background-color:black;
+		
+		}
+#more{
+		font-family:arial balck;
+		font-size:20px;
+		color:gold;
+		background-color:black;
+		}
+#heading2{
+		text-align:center;
+		font-family:ELEPHANT;
+			font-size:50px;
+			color:white;
+			}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+ 
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container1 {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+
+<div id="home1">
+		 <div id="navi">
+		  
+		 <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+    <div class="navbar-header">
+	
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>
+      </button>
+	  
+      	<p class="navbar-brand" id="logo"><img src=LOGO.png height="100px" width="100px" id="img1">&nbsp &nbsp &nbsp &nbsp &nbsp <font id="logo1">Travellers Trail</font></p>
+	   
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home1">Home</a></li>
+        <li><a href="#desti">Destination</a></li>
+        <li><a href="#login">Photography</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav> 
+</div>
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+ 
+    <div class="carousel-inner">
+		<div class="item active">
+        <img src="  canoe-1920x1080-scandinavia-europe-5k-18949.jpg  " style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src=" temple_india_stones_48705_1920x1080.jpg" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="  jaipur.jpg"  style="width:100%;">
+      </div>  
+    </div>
+
+ <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>		 
+
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+  <div id="home2">
+			<p id="tex"> EXPLORE INDIA WITH US</p>
+			<p id="tex2">“The gladdest moment in human life is a departure into unknown lands.” – Sir Richard Burton</p>
+	</div>
+</div>
+ 
+ 	
+</div>
+<div class="container-fluid">
+
+<div class="destination" id="desti">
+<table   cellpadding="10">
+<th colspan=2><p id="heading" align="middle">Top Destinations</th>
+<tr></tr>
+<tr>
+<td>
+		 <div class="container">
+			<img src="ladakh1.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#leh">Leh Ladakh</button></div>
+			</div>
+			</div> 
+		 
+</td>
+<td>
+	<div class="container">
+			<img src="nubra.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#nubra">Nubra Valley</button></div>
+			</div>
+			</div>
+        
+</td>
+</tr>
+<tr><br></tr>
+<tr>
+<td>
+	  <div class="container">
+			<img src="golden.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#golden">Golden Temple</button></div>
+			</div>
+			</div>
+        
+</td>
+<td>
+		 
+        <div class="container">
+			<img src="pangong.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#tso">Pangong Tso</button></div>
+			</div>
+			</div>
+        
+</td>
+</tr>
+
+<tr><br></tr>
+<tr>
+<td>
+	  <div class="container">
+			<img src="taj.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#taj">Taj Mahal</button></div>
+			</div>
+			</div>
+        
+</td>
+<td>
+		 
+        <div class="container">
+			<img src="red.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#red">Red Fort</button></div>
+			</div>
+			</div>
+        
+</td>
+</tr>
+
+</table>
+</div>
+
+<div id="leh" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>LEH LADAKH</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Leh, a high-desert city in the Himalayas, is the capital of the Leh region in northern India’s Jammu and Kashmir state. Originally a stop for trading caravans, Leh is now known for its Buddhist sites and nearby trekking areas. Massive 17th-century Leh Palace, modeled on the Dalai Lama’s former home (Tibet’s Potala Palace), overlooks the old town’s bazaar and mazelike lanes.
+			<br>
+			Elevation: 3,500 m
+		 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div id="nubra" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>NUBRA VALLEY</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Nubra is a tri-armed valley located to the north east of Ladakh valley. Diskit, the headquarter of eponymous Subdivision and also of Nubra tehsil, is about 150 km north from Leh town, the capital of Ladakh district, Jammu and Kashmir, India. Local scholars say that its original name was Ldumra  
+			<br><br>
+			District:Leh
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="golden" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>GOLDEN TEMPLE</b></h4>
+      </div>
+      <div class="modal-body">
+        <p> The Harmandir Sahib, also known as Darbar Sahib, is a Gurdwara located in the city of Amritsar, Punjab, India. It is the preeminent pilgrimage site of Sikhism. It is usually called the Golden Temple in English, because it is plated with gold. <br><br>
+			<BR>
+			District:Punjab
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="tso" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>PANGONG TSO</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>  Pangong Tso, Tibetan for "high grassland lake", also referred to as Pangong Lake, is an endorheic lake in the Himalayas situated at a height of about 4,350 m. It is 134 km long and extends from India to the Tibetan Autonomous Region, China. Wikipedia
+			<br>
+			Surface elevation: 4,250 m
+			<br>
+			Length: 134 km
+			<br>
+			Area: 699.3 km²
+			<br>
+			Max depth: 100 m
+			<br>
+			Location: Ladakh, Jammu and Kashmir
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="taj" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>TAJ MAHAL</b></h4>
+      </div>
+      <div class="modal-body">
+        <p> The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favourite wife, Mumtaz Mahal. It also houses the tomb of Shah Jahan, the builder<br>
+			Surface elevation: 4,250 m
+			<br>
+			Location: Agra
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="red" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>RED FORT</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>  The Red Fort is a historic fort in the city of Delhi in India. Every year on the Independence day of India, the Prime Minister hoists the Indian "tricolour flag" at the main gate of the fort and delivers a nationally broadcast speech from its ramparts.
+			<br>
+			Location: Delhi
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<div id="login" class="sign">
+<p id="heading2">  Photography</p>
+
+<div style="text-align:center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <img src="jama.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);"/>
+  </div>
+  <div class="column">
+    <img src="ajenta.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);"/>
+  </div>
+  <div class="column">
+    <img src="kerala.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);"/>
+  </div>
+  <div class="column">
+    <img src="amber.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);"/>
+  </div>
+</div>
+
+<div class="container1">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<center>
+<pre id="more">
+			
+
+			SignUp for More Intersting Places <br><br><br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <button type="button" class="btn btn-primary" onclick="opensign()">SignUp</button> &nbsp &nbsp &nbsp   <button type="button" class="btn btn-primary" onclick="openlog()">Login</button>
+		<br>
+		</pre>
+</center>
+
+</div>
+
+
+
+
+<div id="about"><center><button type="button" class="btn btn-primary" onclick="opencom()">Community</button> </center>
+		<div id="contact" class="container">
+  <h3 class="text-center" style="font-family:arial black">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p> Drop a note.</p>
+       <p><span class="glyphicon glyphicon-map-marker"></span> TamilNadu, India</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email:ajaycruze60@mail.com</p>
+    </div>
+    
+  </div>
+  <br>
+  <h3 class="text-center">From The Blog</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Nishok</a></li>
+    <li><a data-toggle="tab" href="#menu1">Ajay</a></li>
+	<li><a data-toggle="tab" href="#menu2" onclick="loadDoc()">Our Team</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Nishok Jayakumar, Photographer</h2>
+	  <p>Pleased to see You!</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Ajay, Designer</h2>
+      <p>Always a pleasure people! Hope you enjoyed it as much as I did.</p>
+    </div>
+	<div id="menu2" class="tab-pane fade">
+      <h2 >Team</h2>
+      <p>Togeather Forever!</p>
+	  <div id="team">
+	  </div>
+    </div>
+  </div>
+  
+<footer class="text-center">
+  <a class="up-arrow" href="#home1" data-toggle="tooltip" title="TO TOP">To Top
+    <span class="glyphicon glyphicon-chevron-up"></span></a>
+</footer>
+</div>
+
+</div>	
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip(); 
+ $(".navbar a, footer a[href='#home1']").on('click', function(event) {
+    if (this.hash !== "") {
+     event.preventDefault();
+     var hash = this.hash;
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+            window.location.hash = hash;
+      });
+    }
+  });
+})
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("team").innerHTML =this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+function opensign() {
+  window.open(" http://localhost/blog/temp1.html");
+}
+function openlog(){
+	window.open("http://localhost/blog/login.html");
+}
+function opencom() {
+  window.open(" http://127.0.0.1:8000/");
+}
+</script>
+	
+</body>
+</html>
